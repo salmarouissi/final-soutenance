@@ -48,13 +48,16 @@ export class ActiviteDComponent implements OnInit {
   }
 
 
-
   onAddMembre(){
     this.router.navigate(['/admin/addP/'+this.idActivite]); 
   }
 
   onDetails(id:number){
     this.router.navigate(['/admin/detailsA/'+id]); 
+  }
+
+  onSeeMembre(id:number){
+  this.router.navigate(['/admin/team/'+id]);
   }
 
   onDeleteAct(){
@@ -65,27 +68,6 @@ export class ActiviteDComponent implements OnInit {
         this.router.navigate(['/admin/mainA']); 
       });
     }
-  }
-
-  onDeleteP(index: number): void {
-    const confirmation = window.confirm('Are you sure about deleting this person?');
-    if (confirmation) {
-    if (index >= 0 && index < this.act.equipe.length) {
-      const memberId = this.act.equipe[index].id;
-      const deletedMember = this.act.equipe.splice(index, 1)[0];
-      this.actionSService.updateActivite(this.idActivite, this.act).subscribe(updatedActivite => {});
-  
-      const memberIndex = this.lesMembres.findIndex(member => member.id === memberId);
-  
-      if (memberIndex !== -1) {
-        this.lesMembres.splice(memberIndex, 1);
-        this.actionSService.deleteP(memberId).subscribe(() => {
-          alert('This member has been deleted successfully');
-          this.router.navigate(['/admin/mainA']);
-        });
-      }
-    }
-  }
   }
   
 

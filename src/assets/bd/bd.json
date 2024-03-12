@@ -8,35 +8,35 @@
       "equipe": [
         {
           "id": 1,
-          "firstName": "tekaya",
-          "lastName": "manel",
+          "lastName": "tekaya",
+          "firstName": "manel",
           "role": "Team Lead",
           "image": "assets/images/layout_img/manel_tekaya.jpg",
           "linkdin": "https://www.linkedin.com/in/salma-rouissi-bb1271259/"
         },
         {
           "id": 2,
-          "firstName": "souhaiel",
-          "lastName": "sami",
+          "lastName": "souhaiel",
+          "firstName": "sami",
           "role": "Developper",
           "image": "assets/images/layout_img/photo_sami.jpeg",
           "linkdin": "https://www.linkedin.com/in/salma-rouissi-bb1271259/"
         },
         {
           "id": 3,
-          "lastName": "roussi",
-          "firstName": "syrine ",
+          "lastName": "stouri",
+          "firstName": "syrinee",
           "role": "Developpeur",
           "image": "assets/images/layout_img/profile.jpg",
-          "linkdin": "rrgt"
+          "linkdin": "link"
         },
         {
           "id": 7,
-          "lastName": "ijuhytgre",
-          "firstName": "iojyhtgrfcd",
+          "lastName": "maalej",
+          "firstName": "samy",
           "role": "Technical lead",
           "image": "assets/images/layout_img/profile.jpg",
-          "linkdin": "kijuhygtrfed"
+          "linkdin": "link"
         }
       ],
       "id": "1"
@@ -48,30 +48,30 @@
       "image": "assets/images/activite/matrix.png",
       "equipe": [
         {
-          "lastName": "Attouani",
+          "lastName": "ben ammar",
           "firstName": "Anis",
           "role": "Team Lead",
           "image": "assets/images/layout_img/profile.jpg",
           "linkdin": "https://www.linkedin.com/in/salma-rouissi-bb1271259/"
         },
         {
-          "lastName": "dhouib",
-          "firstName": "tesnim",
+          "lastName": "ben jemaa",
+          "firstName": "hela",
           "role": "technical Lead",
           "image": "assets/images/layout_img/profile.jpg",
           "linkdin": "https://www.linkedin.com/in/salma-rouissi-bb1271259/"
         },
         {
           "lastName": "dammak",
-          "firstName": "Syrine",
+          "firstName": "olfa",
           "role": "developper",
           "image": "assets/images/layout_img/profile.jpg",
           "linkdin": "https://www.linkedin.com/in/salma-rouissi-bb1271259/"
         },
         {
           "id": 9,
-          "lastName": "abdou",
-          "firstName": "weldines",
+          "lastName": "trabelsi",
+          "firstName": "abdelrahmen",
           "role": "Developpeur",
           "image": "assets/images/layout_img/profile.jpg",
           "linkdin": "bjnk,l;"
@@ -87,22 +87,22 @@
       "description": "Ensure SW build and tests launch automatically and continuously Setup CI environment templates and tools for different projects Ensure no regressions for all Core CI users",
       "equipe": [
         {
-          "lastName": "Attouani",
-          "firstName": "Anis",
+          "lastName": "trabelsi",
+          "firstName": "adem",
           "role": "Team Lead",
           "image": "assets/images/layout_img/profile.jpg",
           "linkdin": "https://www.linkedin.com/in/salma-rouissi-bb1271259/"
         },
         {
-          "lastName": "dhouib",
-          "firstName": "tesnim",
+          "lastName": "gharbi",
+          "firstName": "skander",
           "role": "technical Lead",
           "image": "assets/images/layout_img/profile.jpg",
           "linkdin": "https://www.linkedin.com/in/salma-rouissi-bb1271259/"
         },
         {
-          "lastName": "dammak",
-          "firstName": "Syrine",
+          "lastName": "sallem",
+          "firstName": "amina",
           "role": "developper",
           "image": "assets/images/layout_img/profile.jpg",
           "linkdin": "https://www.linkedin.com/in/salma-rouissi-bb1271259/"
@@ -155,68 +155,27 @@
       "equipe": [
         {
           "id": "1",
-          "lastName": "Attouani",
-          "firstName": "Anis",
+          "lastName": "jerbi",
+          "firstName": "ahmed",
           "role": "Team Lead",
           "image": "assets/images/layout_img/profile.jpg",
           "linkdin": "https://www.linkedin.com/in/salma-rouissi-bb1271259/"
         },
         {
           "id": "2",
-          "lastName": "dhouib",
-          "firstName": "tesnim",
+          "lastName": "aba allel",
+          "firstName": "mayssa",
           "role": "developper",
           "image": "assets/images/layout_img/profile.jpg",
           "linkdin": "https://www.linkedin.com/in/salma-rouissi-bb1271259/"
         },
         {
           "id": "3",
-          "lastName": "dammak",
-          "firstName": "Syrine",
+          "lastName": "trabelsi",
+          "firstName": "mohamed",
           "role": "developper",
           "image": "assets/images/layout_img/profile.jpg",
           "linkdin": "https://www.linkedin.com/in/salma-rouissi-bb1271259/"
-        },
-        {
-          "id": 21,
-          "lastName": "frgttbg55454",
-          "firstName": "b",
-          "role": "Developpeur",
-          "image": "assets/images/layout_img/profile.jpg",
-          "linkdin": "c"
-        }
-      ]
-    },
-    {
-      "id": "6",
-      "name": "soutenance",
-      "technology": "informatique",
-      "description": "iset charguia",
-      "image": "assets/images/activite/activite.jpg",
-      "equipe": [
-        {
-          "id": 23,
-          "lastName": "Abdelatif",
-          "firstName": "Bouchaala",
-          "role": "Technical lead",
-          "image": "assets/images/layout_img/profile.jpg",
-          "linkdin": "aa"
-        },
-        {
-          "id": 24,
-          "lastName": "Abdelatif",
-          "firstName": "bouchaala",
-          "role": "Developpeur",
-          "image": "assets/images/layout_img/profile.jpg",
-          "linkdin": "aa"
-        },
-        {
-          "id": 25,
-          "lastName": "bouchaala",
-          "firstName": "Abdelatif",
-          "role": "Team Lead",
-          "image": "assets/images/layout_img/profile.jpg",
-          "linkdin": "c"
         }
       ]
     }
@@ -231,20 +190,20 @@
       "id": "1"
     },
     {
-      "lastName": "dhouib",
-      "firstName": "tesnim",
-      "role": "developper",
-      "image": "assets/images/layout_img/profile.jpg",
-      "linkdin": "https://www.linkedin.com/in/salma-rouissi-bb1271259/",
-      "id": "2"
+      "id": "2",
+      "firstName": "souhaiel",
+      "lastName": "sami",
+      "role": "Developper",
+      "image": "assets/images/layout_img/photo_sami.jpeg",
+      "linkdin": "https://www.linkedin.com/in/salma-rouissi-bb1271259/"
     },
     {
       "id": 3,
-      "lastName": "bn,;:",
-      "firstName": "cvbn,;:",
-      "role": "Technical lead",
+      "lastName": "stouri",
+      "firstName": "syrinee",
+      "role": "Developpeur",
       "image": "assets/images/layout_img/profile.jpg",
-      "linkdin": "dfghjkl"
+      "linkdin": "link"
     },
     {
       "id": 4,
@@ -272,11 +231,11 @@
     },
     {
       "id": 7,
-      "lastName": "ijuhytgre",
-      "firstName": "iojyhtgrfcd",
+      "lastName": "maalej",
+      "firstName": "samy",
       "role": "Technical lead",
       "image": "assets/images/layout_img/profile.jpg",
-      "linkdin": "kijuhygtrfed"
+      "linkdin": "link"
     },
     {
       "id": 8,
@@ -354,17 +313,9 @@
       "id": 24,
       "lastName": "Abdelatif",
       "firstName": "bouchaala",
-      "role": "Developpeur",
-      "image": "assets/images/layout_img/profile.jpg",
-      "linkdin": "aa"
-    },
-    {
-      "id": 25,
-      "lastName": "bouchaala",
-      "firstName": "Abdelatif",
       "role": "Team Lead",
       "image": "assets/images/layout_img/profile.jpg",
-      "linkdin": "c"
+      "linkdin": "aa"
     },
     {
       "id": 26,
@@ -373,13 +324,21 @@
       "role": "Team Lead",
       "image": "assets/images/layout_img/profile.jpg",
       "linkdin": "c"
+    },
+    {
+      "id": 28,
+      "lastName": "vv",
+      "firstName": "pp",
+      "role": "",
+      "image": "assets/images/layout_img/profile.jpg",
+      "linkdin": ""
     }
   ],
   "login": [
     {
       "id": "1",
       "username": "admin",
-      "password": "admin123"
+      "password": "admin"
     }
   ]
 }

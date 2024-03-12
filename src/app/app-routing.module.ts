@@ -17,6 +17,7 @@ import { authGuard } from './gaurd/auth.guard';
 import { ContenairComponent } from './components/Admin/Contenair/contenair/contenair.component'; 
 import { ChangerMDPComponent } from './components/Admin/Changer-MDP/changer-mdp/changer-mdp.component';
 import { ChangerUsernameComponent } from './components/Admin/Changer-Username/changer-username/changer-username.component';
+import { TeamComponent } from './components/Admin/Team/team/team.component';
 
 const routes: Routes = [
   {path:'mainU', title:'Main User', component:MainUserComponent},
@@ -27,6 +28,7 @@ const routes: Routes = [
     {path:'mainA', title:'Main Admin', component:MainAdminComponent},
     {path:'', redirectTo:'/admin/mainA', pathMatch:'full'},
     {path:'detailsA/:id', title:'Admin Details', component:ActiviteDComponent},
+    {path:'team/:id', title:'Team Members', component:TeamComponent},
     {path:'showA', title:'Show Activity', component:ShowActivitiesComponent},
     {path:'addA', title:'Add Activity', component:AddActivitiesComponent},
     {path:'modifA/:id', title:'Modif Activity', component:ModifActivitiesComponent},

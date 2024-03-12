@@ -1,1 +1,133 @@
-<p>team works!</p>
+<div class="dashboard dashboard_1">
+    <div class="full_container">
+       <div class="inner_container">
+
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+                <div class="sidebar_blog_1">
+                <div class="sidebar_user_info">
+                    <div class="user_profle_side">
+                        <div class="user_info">
+                            <h6>Welcome To Tools</h6>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="sidebar_blog_2">
+                <ul class="list-unstyled components">
+                    <li><a routerLink="/admin/mainA"><i class="fa fa-home yellow_color"></i> <span class="intitule">Home</span></a></li>
+                    <li class="active">
+                        <a href="#dashboard" data-toggle="collapse" aria-expanded="false"><i class="fa fa-object-group blue1_color"></i> <span class="intitule">Activities</span></a>
+                        <ol class="collapse list-unstyled" id="dashboard">
+                            <li *ngFor="let a of lesActivites">
+                                <a (click)="onDetails(a.id)" style="cursor: pointer;"><span class="act">> {{a.name}}</span></a>
+                             </li>
+                        </ol>
+                    </li>
+                    <li><a routerLink="/admin/showA"><i class="fa fa-bars purple_color"></i> <span class="intitule">Show Activities</span></a></li>      
+                    <li><a routerLink="/admin/addA"><i class="fa fa-plus-square red_color"></i> <span class="intitule">Add Activities</span></a></li>          
+                </ul>
+                </div>
+            </nav>
+            <!-- end sidebar -->
+            <!-- right content -->
+            <div id="content" >
+                <!-- topbar -->
+                <div class="topbar">
+                    <nav class="navbar navbar-expand-lg navbar-light"></nav>
+                </div>
+                <!-- end topbar -->
+                <div class="container-fluid booking guide py-5"  style="background-image:url('../../../../{{act.image}}'); background-size: cover;background-position: 200px;">
+                    <div class="container py-5" >
+                        
+                        <!--leader's card -->
+                        <div  class="row g-4" >
+                            <ng-container *ngFor="let a of act.equipe, index as i" >
+                                <div *ngIf="act.equipe[i].role== 'Team Lead'" class="col-md-6 col-lg-3" style="margin-left: 40%;">
+                                    <div class="guide-item">
+                                        <div class="guide-img">
+                                            <div class="guide-img-efects">
+                                                <img [src]="act.equipe[i].image" class="img-fluid w-100 rounded-top" alt="Image">
+                                            </div>
+                                            <div class="guide-icon rounded-pill p-2">
+                                                <a [href]="act.equipe[i].linkdin" class="btn btn-square btn-primary rounded-circle mx-1" style="background-color: rgb(23, 52, 147);color:white"><i class="fab fa-linkedin-in"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="guide-title text-center rounded-bottom p-4">
+                                            <div class="guide-title-inner">
+                                                <h4 class="mt-3">{{act.equipe[i].role| titlecase}}</h4>
+                                                <p class="mb-0">{{act.equipe[i].firstName | titlecase}}  {{act.equipe[i].lastName | uppercase}}</p>
+                                                <a [routerLink]="['/admin/modifP',act.id,i,act.equipe[i].id]"  style="margin-right:4%;margin-left: 3%;" >
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                        <path style="color: rgb(102, 183, 102);" d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                                        <path style="color: rgb(126, 197, 126);" fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                                                    </svg>
+                                                </a>
+                                                <a (click)="onDeleteP(i)">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                        <path style="color: red;" d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-container>          
+                        </div>
+
+                        <br><br><br>
+                        <!-- team's member cards -->
+                        <div  class="row g-4" style="margin-left: 10%;margin-right: 7%;">
+                            <ng-container *ngFor="let a of act.equipe, index as i" >
+                                <div *ngIf="act.equipe[i].role != 'Team Lead'" class="col-md-6 col-lg-3" >
+                                    <div class="guide-item">
+                                        <div class="guide-img">
+                                            <div class="guide-img-efects">
+                                                <img [src]="act.equipe[i].image" class="img-fluid w-100 rounded-top" alt="Image">
+                                            </div>
+                                            <div class="guide-icon rounded-pill p-2">
+                                                <a [href]="act.equipe[i].linkdin" class="btn btn-square btn-primary rounded-circle mx-1" style="background-color: rgb(23, 52, 147);color:white"><i class="fab fa-linkedin-in"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="guide-title text-center rounded-bottom p-4">
+                                            <div class="guide-title-inner">
+                                                <h4 class="mt-3">{{act.equipe[i].role| titlecase}}</h4>
+                                                <p class="mb-0">{{act.equipe[i].firstName | titlecase}}  {{act.equipe[i].lastName | uppercase}}</p>
+                                                <a [routerLink]="['/admin/modifP',act.id,i,act.equipe[i].id]"  style="margin-right:4%;margin-left: 3%;" >
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                        <path style="color: rgb(102, 183, 102);" d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                                        <path style="color: rgb(126, 197, 126);" fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                                                    </svg>
+                                                </a>
+                                                <a (click)="onDeleteP(i)">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                        <path style="color: red;" d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-container>
+                            
+                                        
+                        </div>
+                        
+                        <div >
+                            <div>
+                                <button style="margin-left:50%;margin-top:11%;background-color: rgba(75, 104, 162, 0.881);;width: 150px;height: 50px;margin-left: 47%;font-size: 15px;" class="btn btn-sm btn-outline-secondary" (click)="onAddMembre()"><i class="fa fa-plus-circle" ></i>   Members</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+ 
+ 
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
