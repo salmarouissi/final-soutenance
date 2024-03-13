@@ -62,16 +62,15 @@ export class AddPersonneComponent implements OnInit {
     const lastName = this.ajoutPersonneForm.get('nom')?.value;
     const firstName = this.ajoutPersonneForm.get('prenom')?.value;
 
-    // Vérifier si le membre existe déjà
     const existingMember = this.lesMembres.find(
       member => member.lastName.toLowerCase() === lastName.toLowerCase() && member.firstName.toLowerCase() === firstName.toLowerCase()
     );
 
     if (existingMember) {
-      alert('Le membre existe déjà ');
-      // Ajoutez ici le code pour gérer le cas où le membre existe déjà.
-      // Par exemple, afficher un message d'erreur à l'utilisateur.
-    } else {
+      alert('existant member ');
+      
+    } 
+    else {
       const len = this.lesMembres.length;
       const idNext = len > 0 ? this.lesMembres[len - 1].id + 1 : 1;
       console.log("id", idNext);
